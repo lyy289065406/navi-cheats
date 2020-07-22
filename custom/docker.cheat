@@ -1,0 +1,21 @@
+% custom, docker
+
+# 删除所有未被使用的对象（除存储卷）：包括镜像、容器、网络
+docker system prune
+
+# 删除所有未被使用的对象：包括镜像、容器、网络和存储卷
+docker system prune --volumes
+
+# 删除所有未被使用的镜像
+docker image prune -a
+
+# 删除所有未被使用的容器
+docker container prune
+
+# 删除所有未被使用的存储卷
+docker volume prune
+
+# 删除所有未被使用的网络：包括 iptables 规则，桥网络设备和路由表
+docker network prune
+
+

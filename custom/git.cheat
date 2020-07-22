@@ -1,0 +1,23 @@
+% custom, git
+
+# 设置代理
+git config http.proxy <proxy>
+
+# 取消代理
+git config --unset http.proxy
+
+# 新建分支
+git checkout -b <new_branch>
+
+# 切换分支
+git checkout <branch>
+
+# 删除分支
+git checkout -D <branch>
+
+
+$ branch: git branch | awk '{print $NF}'
+
+
+; 若有多个代理用 , 分隔即可
+$ proxy: echo 'http://1.2.3.4:5555,http://5.4.3.2:1111' | tr ',' '\n'

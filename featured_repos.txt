@@ -1,5 +1,6 @@
 denisidoro/cheats
 denisidoro/dotfiles
+lyy289065406/navi-cheats
 mrVanDalo/navi-cheats
 chazeon/my-navi-cheats
 caojianhua/MyCheat
