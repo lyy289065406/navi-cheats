@@ -1,7 +1,7 @@
 % custom, navi
 
-# 查看 navi 默认的 cheats 目录
-echo "~/Library/Application\ Support/navi/cheats/denisidoro__cheats"
+# mac:查看 navi 默认的 cheats 目录
+echo "~/Library/Application\ Support/navi/cheats"
 
 # 配置 navi 自定义的 cheats 目录
 navi --path <custom_cheats_path>
