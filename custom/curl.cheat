@@ -1,0 +1,23 @@
+% custom, curl
+
+; ============================================================================
+
+# 发送一个 HTTP/HTTPS 请求（忽略证书）
+curl -k <url>
+
+# 发送一个含有自定义 HEADER 的 HTTP 请求
+curl -X <method> <url> -H "<header_name>: <header_value>"
+
+# 发送一个含有 JSON 数据的 HTTP 请求
+curl -X <method> <url>  -H 'Content-Type: application/json' -d '<json_data>'
+
+# 发送一个含有表单数据的 HTTP 请求
+curl <url> -d <form_key>=<form_value>
+
+# 发送一个含有本地文件的 HTTP 请求
+curl -X <method> <url> --data-binary "@<file>"
+
+; ============================================================================
+
+$ file: ls
+$ method: echo -e 'GET\nPOST\nPUT\nDELETE\nPATCH'

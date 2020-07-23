@@ -1,0 +1,11 @@
+% custom, find, search
+
+; ============================================================================
+
+# 从指定目录查找文件（非目录）
+sudo find <dirpath> | xargs ls -ld | grep -v "^d" | grep "<keyword_in_filename>"
+
+# 从指定目录查找文件/目录
+sudo find <dirpath> -iname "<keyword_in_filename>"
+
+; ============================================================================

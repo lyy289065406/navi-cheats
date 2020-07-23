@@ -1,0 +1,24 @@
+% custom, ansible, playbook, yml
+
+; ============================================================================
+
+# 查看目标主机的基本系统信息
+ansible <ip> -m setup
+
+# 测试到目标主机的连通性
+ansible <ip> -m ping
+
+# 检查剧本语法是否正常
+ansible-playbook --syntax-check <playbook_yml>
+
+# 查看剧本会影响哪些主机
+ansible-playbook -i <inventory> <playbook_yml> --list-hosts
+
+# 以调试模式执行剧本
+ansible-playbook -i <inventory> <playbook_yml> -vvv
+
+; ============================================================================
+
+$ ip: echo 'all,' | tr ',' '\n'
+$ playbook_yml: ls | grep "*.yml"
+

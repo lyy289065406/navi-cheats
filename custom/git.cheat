@@ -2,29 +2,29 @@
 
 ; ============================================================================
 
-# [01] 新建分支
-git checkout -b <new_branch>            
+# 新建分支
+git checkout -b <new_branch>
 
-# [02] 切换分支
-git checkout <branch>                  
+# 切换分支
+git checkout <branch>
 
-# [03] 删除分支
-git checkout -D <branch>              
+# 删除分支
+git checkout -D <branch>
 
-# [04] 标记所有变更文件
-git add -A                           
+# 标记所有变更文件
+git add -A
 
-# [05] 提交变更到本地仓库
-git commit -m "<message>"           
+# 提交变更到本地仓库
+git commit -m "<message>"
 
-# [06] 上传变更到服务器
-git push                           
+# 上传变更到服务器
+git push
 
-# [07] 设置代理
-git config http.proxy <proxy>     
+# 设置代理
+git config http.proxy <proxy>
 
-# [08] 取消代理
-git config --unset http.proxy    
+# 取消代理
+git config --unset http.proxy
 
 ; ============================================================================
 
