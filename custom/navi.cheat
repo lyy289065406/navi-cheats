@@ -1,18 +1,19 @@
 % custom, navi
 
-# mac:查看 navi 默认的 cheats 目录
-echo "~/Library/Application\ Support/navi/cheats"
-
-# 配置 navi 自定义的 cheats 目录
-navi --path <custom_cheats_path>
-
-# 从自定义仓库选择默认的 cheats 文件
+# [01] 从自定义仓库选择默认的 cheats 文件
 navi repo add https://github.com/lyy289065406/navi-cheats
 
-# 从官方仓库选择默认的 cheats 文件
+# [02] 从官方仓库选择默认的 cheats 文件
 navi repo add https://github.com/denisidoro/cheats
 
-# 从官方推荐仓库选择默认的 cheats 文件
+# [03] 从官方推荐仓库选择默认的 cheats 文件
 navi repo add <cheats_repos>
+
+# [04] mac:查看 navi 默认的 cheats 目录
+echo "~/Library/Application\ Support/navi/cheats"
+
+# [05] 配置 navi 自定义的 cheats 目录
+navi --path <custom_cheats_path>
+
 
 $ cheats_repos: navi repo browse
