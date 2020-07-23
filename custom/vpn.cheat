@@ -1,7 +1,11 @@
 % custom, vpn, trojan
 
-# mac:科学上网 （127.0.0.1:1089）
-~/vpn/trojan/trojan -c ~/vpn/trojan/config.json
+; ============================================================================
 
-# mac:科学上网检查
-~/vpn/trojan/trojan -t ~/vpn/trojan/config.json
+# [01] mac:科学上网 （127.0.0.1:1089）
+~/vpn/trojan/trojan -c ~/vpn/trojan/config.json    
+
+# [02] mac:科学上网检查
+~/vpn/trojan/trojan -t ~/vpn/trojan/config.json   
+
+; ============================================================================
