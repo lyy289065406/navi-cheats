@@ -3,34 +3,34 @@
 ; ============================================================================
 
 # [01] 运行镜像并打开交互终端（root 用户）
-docker run -it -u root <image_id> <shell>                 
+docker run -it -u root <image_id> <shell>           
 
 # [02] 运行镜像并打开交互终端
-docker run -it <image_id> <shell>                        
+docker run -it <image_id> <shell>                
 
 # [03] 打开容器交互终端（root 用户）
-docker exec -it -u root <container_id> <shell>          
+docker exec -it -u root <container_id> <shell>
 
 # [04] 打开容器交互终端
-docker exec -it <container_id> <shell>                 
+docker exec -it <container_id> <shell>
 
-# [05] 删除所有未被使用的对象（除存储卷）：包括镜像、容器、网络
-docker system prune                                   
+# [05] 删除所有未被使用的镜像
+docker image prune -a              
 
-# [06] 删除所有未被使用的对象：包括镜像、容器、网络和存储卷
-docker system prune --volumes                        
+# [06] 删除所有未被使用的容器
+docker container prune           
 
-# [07] 删除所有未被使用的镜像
-docker image prune -a                               
+# [07] 删除所有未被使用的网络
+docker network prune            
 
-# [08] 删除所有未被使用的容器
-docker container prune                             
+# [08] 删除所有未被使用的存储卷
+docker volume prune           
 
-# [09] 删除所有未被使用的存储卷
-docker volume prune                               
+# [09] 删除所有未被使用的对象：包括镜像、容器、网络和存储卷
+docker system prune --volumes
 
-# [10] 删除所有未被使用的网络：包括 iptables 规则，桥网络设备和路由表
-docker network prune                             
+# [10] 删除所有未被使用的对象（除存储卷）：包括镜像、容器、网络
+docker system prune
 
 ; ============================================================================
 
