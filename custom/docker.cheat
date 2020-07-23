@@ -7,10 +7,10 @@ docker run -it -u root <image_id> <shell>
 docker run -it <image_id> <shell>
 
 # 打开容器交互终端（root 用户）
-docker run -it -u root <container_id> <shell>
+docker exec -it -u root <container_id> <shell>
 
 # 打开容器交互终端
-docker run -it <container_id> <shell>
+docker exec -it <container_id> <shell>
 
 # 删除所有未被使用的对象（除存储卷）：包括镜像、容器、网络
 docker system prune
