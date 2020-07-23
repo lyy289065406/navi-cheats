@@ -32,4 +32,4 @@ docker network prune
 
 
 
-$ shell: echo '/bin/dash,/bin/sh,/bin/bash' | tr ',' '\n'
+$ shell: echo '/bin/bash,/bin/sh,/bin/dash' | tr ',' '\n'
