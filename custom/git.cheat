@@ -15,9 +15,19 @@ git checkout <branch>
 # 删除分支
 git checkout -D <branch>
 
+# 标记所有变更文件
+git add -A
 
-$ branch: git branch | awk '{print $NF}'
+# 提交变更到本地仓库
+git commit -m "<message>"
+
+# 上传变更到服务器
+git push
+
+
 
 
 ; 若有多个代理用 , 分隔即可
 $ proxy: echo 'http://1.2.3.4:5555,http://5.4.3.2:1111' | tr ',' '\n'
+
+$ branch: git branch | awk '{print $NF}'
