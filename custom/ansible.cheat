@@ -20,5 +20,6 @@ ansible-playbook -i <inventory> <playbook_yml> -vvv
 ; ============================================================================
 
 $ ip: echo 'all,' | tr ',' '\n'
+$ inventory: ls inventory
 $ playbook_yml: ls | grep "*.yml"
 
