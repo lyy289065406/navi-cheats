@@ -6,7 +6,7 @@ When the user runs navi for the first time, navi prompts to download `.cheat`s f
 
 In order to add your own repository as a featured cheatsheet repo, please [edit this file](https://github.com/denisidoro/cheats/edit/master/featured_repos.txt). This list will be displayed when `navi repo browse` is run.
 
-## 注
+### 注
 
 navi 存在一个体验问题，其候选列表排序与 `.cheat` 文件的编辑顺序是没有任何关系的，纯粹就是按命令长度排序（等长则按注释长度），导致若某个关键字对应的候选命令较多时，会陷入查找困难的麻烦，针对此体验问题已向官方提 [issue](https://github.com/denisidoro/navi/issues/369)。
 
