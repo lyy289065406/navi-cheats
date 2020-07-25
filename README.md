@@ -8,7 +8,7 @@ In order to add your own repository as a featured cheatsheet repo, please [edit 
 
 ### 注
 
-由于 navi 使用 fzf 搜索并回显结果，而 fzf 的回显存在一个体验问题，其候选列表排序与 `.cheat` 文件的编辑顺序是没有任何关系的，纯粹就是按命令长度排序（等长则按注释长度），导致若某个关键字对应的候选命令较多时，会陷入查找困难的麻烦，针对此问题的解决方法可见 [issue](https://github.com/denisidoro/navi/issues/369) 。
+由于 [navi](https://github.com/denisidoro/navi) 使用 [fzf](https://github.com/junegunn/fzf) 搜索并回显结果，而 [fzf](https://github.com/junegunn/fzf) 的回显存在一个体验问题，其候选列表排序与 `.cheat` 文件的编辑顺序是没有任何关系的，纯粹就是按命令长度排序（等长则按注释长度），导致若某个关键字对应的候选命令较多时，会陷入查找困难的麻烦，针对此问题的解决方法可见 [issue](https://github.com/denisidoro/navi/issues/369) 。
 
 简而言之，只需要在 `.zshrc` （或 `.bashrc`） 追加以下内容：
 
