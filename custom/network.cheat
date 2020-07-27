@@ -30,4 +30,13 @@ ifconfig \
 # mac:打印出口 IP 地址
 dig +short myip.opendns.com @resolver1.opendns.com
 
+# linux:打印出口 IP 地址
+curl ipinfo.io/ip
+
+# 测试 TCP 端口服务
+nc -v <ip> <port> -w 10
+
+# 测试 UDP 端口服务
+nc -uv <ip> <port> -w 10
+
 ; ============================================================================
