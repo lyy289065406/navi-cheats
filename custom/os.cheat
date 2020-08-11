@@ -1,0 +1,7 @@
+% custom, os
+
+; ============================================================================
+
+# linux: 查询系统版本
+cat /etc/redhat-release; cat /etc/lsb-release; cat /etc/issue; cat /proc/version; uname -a; lsb_release -a
+
