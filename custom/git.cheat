@@ -20,11 +20,32 @@ git commit -m "<message>"
 # 上传变更到服务器
 git push
 
+# 把目标分支合并到当前分支（本地合并）
+git merge <branch>
+
 # 设置代理
 git config http.proxy <proxy>
 
 # 取消代理
 git config --unset http.proxy
+
+# 设置 git 邮箱
+git config --global user.email <email>
+
+# 设置 git 用户
+git config --global user.name <username>
+
+# 设置 github token（可视为密码）
+git config --global github.token <gtk>
+
+# 查看远程仓库路径
+git remote -v
+
+# 设置远程仓库路径（ Git 协议 ）
+git remote set-url origin git@github.com:<owner>/<repo>
+
+# 设置远程仓库路径（ HTTP 协议 ）
+git remote set-url origin https://github.com/<owner>/<repo>.git
 
 ; ============================================================================
 
